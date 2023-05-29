@@ -1,0 +1,6 @@
+-- African Cities
+
+SELECT c.NAME
+FROM CITY c
+INNER JOIN COUNTRY con ON c.COUNTRYCODE = con.CODE
+WHERE con.CONTINENT = 'Africa'
